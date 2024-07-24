@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <title>Globo</title>
+</head>
+<style>
+    body{
+        font-family: "Encode Sans", sans-serif;
+
+    }
+    
+    .logo{
+        display: flex;
+        justify-content:center;
+    }
+    .menu{
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 23.75px;
+        display: flex;
+        justify-content:space-between;
+        width: 1250px;
+
+    }
+    .container-menu{
+        margin: 0 auto;
+        width: 100%;
+        border-top:1px solid #F5F6F7;
+        border-bottom:1px solid #F5F6F7;
+        display: flex;
+        justify-content:center;
+
+    }
+    .item{
+        margin: 6px 0;
+    }
+    .item a{
+        text-decoration: none;
+        font-family: "encode sans";
+    }
+    .g1{
+        color: #C3170C;
+    }
+    .oglobo{
+        color: #1E4B9B;
+    }
+    .valor{
+        color: #006766;
+    }
+    .ge{
+        color:#07AA47;
+    }
+    .cartola{
+        color:#E3662B;
+    }
+    .globoplay{
+        color:#FB0735;
+    }
+    .dropz{
+        color:#FF75BB;
+    }
+    .gshow{
+        color:#EC7D00;
+    }
+    .quem{
+        color:#323333;
+    }
+    .receitas{
+        color: #A81D83;
+    }
+    .container-noticias{
+        margin:0 auto;
+    }
+    .conteudo-esquerda{
+        width:666px;
+    }
+    .noticia-principal {
+        width: 624px;
+        margin-top:40px;
+    }
+    .noticia-principal .titulo a{
+        text-decoration: none;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 67px;
+        color: #C4160C;
+    }
+    .noticia-principal .titulo a:hover{
+        text-decoration: underline;
+    }
+    .noticia-principal .subtitulo-principal{
+        font-weight: 500;
+        font-size: 18px;
+        line-height:22.5px;
+    }
+    .linha-vertical{
+        width: 1px;
+        height: 845px;
+        margin-top:42px;
+        background-color: #EBEDEF;
+    }
+    .linha-horizontal{
+        width: 624px;
+        height: 1px;
+        background-color: #EBEDEF;
+    }
+    .container-noticias{
+        display: flex;
+        width: 1250px;
+    }
+
+    .img-secundarias img{
+        width: 193px;
+        height:110px;
+        border-radius: 10%;
+    }
+    .noticias-secundarias-superior{
+        margin-top:25px;
+        display: flex;
+        gap:24px;
+
+    }
+    .noticias-secundarias-inferior{
+        display: flex;
+        gap:25px;
+    }
+    .container-secundarias{
+        width: 193px;
+    }
+    .topico-secundarias{
+        color:#C4170C;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.5px;    
+    }
+    .titulo-secundarias{
+        color:#2F3134;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+    .subtitulo-secundarias{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+    }
+    .conteudo-direita{
+        margin-left: 35px;
+        margin-top: 36px;
+        display: flex;
+        gap:35px;
+    }
+    .filha-noticias-coluna-direita {
+        width: 240px;
+
+    }
+
+    .topico-coluna-direita{
+        color:#EC8006;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.5px;    
+    }
+    .titulo-coluna-direita{
+        color:#2F3134;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        margin: 6px 0;
+      
+    }
+    .subtitulo-coluna-direita{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        margin-bottom: 50px;
+    }
+    .img-coluna-direita img{
+        width: 240px;
+        height:128px;
+        border-radius: 10%;
+    }
+    .filha-noticias-coluna-esquerda {
+        width: 240px;
+
+    }
+
+    .topico-coluna-esquerda{
+        color:#16AE54;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.5px;    
+    }
+    .titulo-coluna-esquerda{
+        color:#2F3134;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 17.5px;
+      
+    }
+    .subtitulo-coluna-esquerda{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        margin-bottom: 50px;
+    }
+    .img-coluna-esquerda img{
+        width: 240px;
+        height:128px;
+        border-radius: 10%;
+    }
+</style>
+</head>
+<body>
+<div class="cabecalho">
+    <div class="logo">
+        <a href="#">
+            <img src="images/logo-globo.png" alt="">
+        </a>
+    </div>
+    <div class="container-menu">
+
+    
+        <div class="menu">
+            <div class="item g1">
+                <a class="g1"href="#">g1</a> 
+            </div>
+            <div class="item">
+              <a href="#" class="oglobo">o globo</a> 
+            </div>
+            <div class="item">
+                <a href="#" class="valor">valor</a> 
+            </div>
+            <div class="item">
+                <a href="#" class="ge">ge</a> 
+            </div>
+            <div class="item">
+               <a href="#" class="cartola">cartola</a> 
+            </div>
+            <div class="item">
+                <a href="#" class="globoplay">globoplay</a>
+                
+            </div>
+            <div class="item">
+                <a href="#" class="dropz">dropz</a>
+            </div>
+            <div class="item">
+                <a href="#" class="quem">quem</a>
+            </div>
+            <div class="item">
+                <a href="#" class="receitas">receitas</a>
+
+                
+            </div>
+        </div>    
+    </div>
+    <div class="container-noticias">
+        <div class="conteudo-esquerda">
+            <div class="noticias">
+                <div class="noticia-principal">
+                    <p class="titulo">
+                        <a href="#">Vacinados entrarão nos EUA sem quarentena a partir de 8 de novembro</a>
+                    </p>
+                    <p class="subtitulo-principal">Ministros ‘lavam as mãos’ sobre Bolsonaro não se vacinar, relata blog
+                        Bandeiras em frente ao Congresso lembram 600 mil brasileiros mortos</p>
+                        <div class="linha-horizontal">
+
+                        </div>
+    
+                </div>
+                <div class="noticias-secundarias-superior">
+                    <div class="container-secundarias">
+                        <div class="img-secundarias">
+                            <img src="images/alem-do-presidente.jpeg" alt="">
+                        </div>
+                        <p class="topico-secundarias">
+                            Além do presidente 
+                        </p>
+                        <p class="titulo-secundarias">
+                            CPI deve pedir indiciamento de filhos de Bolsonaro
+                        </p>
+                        <p class="subtitulo-secundarias">
+                            A evangélicos, Bolsonaro diz ‘chorar sozinho em casa’
+                        </p>
+                    </div>
+                   
+                    <div class="container-secundarias">
+                        <div class="img-secundarias">
+                            <img src="images/crimes-na-fronteira.jpeg" alt="">
+                        </div>
+                        <p class="topico-secundarias">
+                            Crimes na fronteira 
+                        </p>
+                        <p class="titulo-secundarias">
+                            Triângulo amoroso vira chave em linha de investigação
+                        </p>
+                        <p class="subtitulo-secundarias">
+                            1ª de 7 mortes entre Brasil e Paraguai faz 1 semana
+                        </p>
+                    </div>
+                    <div class="container-secundarias">
+                        <div class="img-secundarias">
+                            <img src="images/reino-unido.jpeg" alt="">
+                        </div>
+                        <p class="topico-secundarias">
+                            Reino Unido 
+                        </p>
+                        <p class="titulo-secundarias">
+                            Parlamentar inglês é esfaqueado e morto em igreja                        </p>
+                        <p class="subtitulo-secundarias">
+                            Homem de 25 anos foi preso no local, diz polícia                        </p>
+                    </div>
+                    
+                </div>
+                
+                <div class="linha-horizontal"></div>
+                <div class="noticias-secundarias-inferior">
+                    <div class="container-secundarias">
+                        
+                        <p class="topico-secundarias">
+                            Além do presidente 
+                        </p>
+                        <p class="titulo-secundarias">
+                            PGR é consultada sobre investigação contra Alcolumbre
+                        </p>
+                        <p class="subtitulo-secundarias">
+                            Aliados dizem que situação de Alcolumbre ‘está feia’
+                        </p>
+                    </div>
+                   
+                    <div class="container-secundarias">
+                       
+                        <p class="topico-secundarias">
+                            Crimes na fronteira 
+                        </p>
+                        <p class="titulo-secundarias">
+                            Triângulo amoroso vira chave em linha de investigação
+                        </p>
+                        <p class="subtitulo-secundarias">
+                            1ª de 7 mortes entre Brasil e Paraguai faz 1 semana
+                        </p>
+                    </div>
+                    <div class="container-secundarias">
+                       
+                        <p class="topico-secundarias">
+                            Reino Unido 
+                        </p>
+                        <p class="titulo-secundarias">
+                            Parlamentar inglês é esfaqueado e morto em igreja                        </p>
+                        <p class="subtitulo-secundarias">
+                            Homem de 25 anos foi preso no local, diz polícia                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="linha-vertical">
+
+        </div>
+        <div class="conteudo-direita">
+            <div class="noticias-coluna-esquerda">
+                <div class="filha-noticias-coluna-esquerda">
+                    <div class="img-coluna-esquerda">
+                        <img src="images/espiao-estatistico.jpeg" alt="">
+                    </div>
+                    <p class="topico-coluna-esquerda">
+                        Espião estatístico
+                    </p>
+                    <p class="titulo-coluna-esquerda">
+                        Classificação do returno tem Palmeiras em último; veja as posições
+
+                    </p>
+                    <p class="subtitulo-coluna-esquerda">
+                        Crespo almoça com diretoria e deve se despedir no CT
+                    </p>
+                </div>
+               
+                <div class="filha-noticias-coluna-esquerda">
+                    <div class="img-coluna-esquerda">
+                        <img src="images/greve-segue-na-raposa.jpeg" alt="">
+                    </div>
+                    <p class="topico-coluna-esquerda">
+                        Greve segue na Raposa
+                     </p>
+                    <p class="titulo-coluna-esquerda">
+                        Cruzeiro não viabiliza recurso para quitar atrasados
+                    </p>
+                    <p class="subtitulo-coluna-esquerda">
+                        
+                    </p>
+                    
+                </div>
+                <div class="filha-noticias-coluna-esquerda">
+                    <div class="img-coluna-esquerda">
+                        <img src="images/campeonato-frances.jpeg" alt="">
+                    </div>
+                    <p class="topico-coluna-esquerda">
+                        Campeonato francês
+                    </p>
+                    <p class="titulo-coluna-esquerda">
+                        Desfalcado, PSG recebe o Angers, 4º colocado
+                      </p>
+                    </p>
+                </div>
+                
+            </div>
+            <div class="linha-vertical" style="margin-top:0"></div>
+            <div class="noticias-coluna-direita">
+                <div class="filha-noticias-coluna-direita">
+                    <div class="img-coluna-direita">
+                        <img src="images/ferias-e-jh.jpeg" alt="">
+                    </div>
+                    <p class="topico-coluna-direita">
+                        Férias e JH
+                    </p>
+                    <p class="titulo-coluna-direita">
+                        César Tralli se emociona na despedida do SP1
+                    </p>
+                    <p class="subtitulo-coluna-esquerda">
+                        
+                    </p>
+                    
+                </div>
+               
+                <div class="filha-noticias-coluna-direita">
+                    <div class="img-coluna-direita">
+                        <img src="images/verdades-secretas-2.jpeg" alt="">
+                    </div>
+                    <p class="topico-coluna-direita">
+                        Verdades Sceretas 2
+                                         </p>
+                    <p class="titulo-coluna-direita">
+                        Angel cruza a passarela poderosa; reveja desfiles
+                    </p>
+                    <div class="subtitulo-coluna-direita">
+                        <p>
+                            Blanche terá dois relacionamentos   
+                        </p>
+                        <p>
+                            Gabriel viverá sadomasoquista
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="filha-noticias-coluna-direita">
+                    <div class="img-coluna-direita">
+                        <img src="images/nos-tempos-do-imperador.jpeg" alt="">
+                    </div>
+                    <p class="topico-coluna-direita">
+                        Nos Tempos do Imperador
+                    </p>
+                    <p class="titulo-coluna-direita">
+                        Lota vai cair em golpe
+                      </p>
+                      <p class="subtitulo-coluna-esquerda">
+                        Teresa toma decisão radical
+                      </p>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+    
+</body>
+</html>
